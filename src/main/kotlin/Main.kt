@@ -5,4 +5,13 @@ fun main(args: Array<String>) {
 
     print("Введите число: ")
     val n = reader.nextInt()
+fun discharges(n: Int): Int {
+    var i = 0
+    var m = n
+
+    while (m > 0) {
+        m /= 10
+        i += 1
+    }
+    return i
 }
