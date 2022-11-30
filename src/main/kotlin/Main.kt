@@ -5,6 +5,11 @@ fun main(args: Array<String>) {
 
     print("Введите число: ")
     val n = reader.nextInt()
+
+    print("Количество разрядов: ${discharges(n)}" )
+
+}
+
 fun discharges(n: Int): Int {
     var i = 0
     var m = n
