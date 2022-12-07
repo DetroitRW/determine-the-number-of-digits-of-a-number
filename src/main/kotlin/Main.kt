@@ -11,12 +11,6 @@ fun main(args: Array<String>) {
 }
 
 fun discharges(n: Int): Int {
-    var i = 0
-    var m = n
-
-    while (m > 0) {
-        m /= 10
-        i += 1
-    }
-    return i
+    if (n == 0) {return 0}
+    return discharges(n / 10) + 1
 }
